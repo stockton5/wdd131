@@ -35,9 +35,9 @@ nav a {
   text-decoration: none;
   border-top: 1px solid gray;
 }
-.hide {
+/* .hide {
   display: none;
-}
+} */
 nav a:hover {
     text-decoration: none;
     color: #616061;
