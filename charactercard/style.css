@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  font-family: "Palatino Linotype", Palatino, serif;
+  background-color: #f0f4f8;
+}
+
+.card {
+  width: min(400px, 90vw);
+  overflow: hidden;
+  background-color: #313131;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.character-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.name {
+  margin: 0;
+  padding: 15px 35px;
+  color: white;
+  font-size: 1.5rem;
+  background-color: #5d747b;
+}
+
+.stats {
+  margin: 18px 35px 8px;
+  text-align: left;
+}
+
+.stats p {
+  margin: 5px 0;
+  color: #f0f4f8;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 18px;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font: inherit;
+  font-weight: bold;
+  background-color: #5d747b;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #465a60;
+  transform: translateY(-2px);
+}
+
+button:focus-visible {
+  outline: 3px solid white;
+  outline-offset: 3px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.status-message {
+  min-height: 24px;
+  margin: 0;
+  padding: 0 20px 18px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}

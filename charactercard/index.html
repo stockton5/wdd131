@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Swamp Beast Character Card</title>
+  <meta
+    name="description"
+    content="An interactive fantasy character card featuring attack and level-up controls."
+  >
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Swamp Beast Character Card">
+  <meta
+    property="og:description"
+    content="An interactive fantasy character card featuring attack and level-up controls."
+  >
+  <meta
+    property="og:url"
+    content="https://stockton5.github.io/wdd131/charactercard/"
+  >
+  <meta
+    property="og:image"
+    content="https://stockton5.github.io/wdd131/charactercard/images/social-preview.png"
+  >
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Swamp Beast Character Card">
+  <meta
+    name="twitter:description"
+    content="An interactive fantasy character card featuring attack and level-up controls."
+  >
+  <meta
+    name="twitter:image"
+    content="https://stockton5.github.io/wdd131/charactercard/images/social-preview.png"
+  >
+
+  <!-- Icons -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <section class="card" aria-labelledby="character-name">
+      <img
+        id="character-image"
+        class="character-image"
+        src="image.png"
+        alt="A fantasy swamp beast standing in shallow water"
+        width="400"
+        height="400"
+      >
+
+      <h1 id="character-name" class="name"></h1>
+
+      <div class="stats">
+        <p><strong>Class:</strong> <span id="character-class"></span></p>
+        <p><strong>Level:</strong> <span id="character-level"></span></p>
+        <p><strong>Health:</strong> <span id="character-health"></span></p>
+      </div>
+
+      <div class="buttons">
+        <button id="attack-button" type="button">Attacked</button>
+        <button id="level-button" type="button">Level Up</button>
+      </div>
+
+      <p id="status-message" class="status-message" aria-live="polite"></p>
+    </section>
+  </main>
+</body>
+</html>
