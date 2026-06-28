@@ -184,3 +184,18 @@ footer {
     order: 2;
   }
 }
+
+#recipe-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.no-results {
+  text-align: center;
+}
